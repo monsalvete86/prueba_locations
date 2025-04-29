@@ -1,0 +1,43 @@
+# Ignorar directorios de dependencias para backend (Laravel) y frontend (React)
+/vendor
+/node_modules
+
+# Ignorar archivos de entorno con información sensible
+.env
+.env.local
+.env.*.local
+
+# Ignorar el output de la construcción del frontend
+/dist
+/build # Si usas Create React App u otra herramienta de build
+
+# Ignorar archivos de log
+/storage/*.log
+/public/hot
+/public/storage
+
+# Ignorar archivos de cache y temporales específicos de Laravel
+/bootstrap/cache/*.php
+
+# Ignorar archivos de depuración y volcado (dump files)
+*.bak
+*.swp
+*.swo
+
+# Ignorar los resultados de pruebas y herramientas de calidad si generan archivos en el proyecto
+# Aunque los README mencionan herramientas, generalmente sus outputs no necesitan ser ignorados a menos que se configuren para generar archivos específicos.
+# Si PHPUnit, PHP_CodeSniffer, PHPStan o Laravel Pint generan logs o reports fuera de vendor/, agrégalos aquí.
+
+# Ignorar archivos generados por IDEs u otros editores comunes
+.idea/
+.vscode/
+*.iml
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+report.[0-9]+.[0-9]+.[0-9]+.[0-9]+.json
+.pnpm-debug.log*
+.env.development.local
+.env.test.local
+.env.production.local
